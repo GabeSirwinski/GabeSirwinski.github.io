@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+         .svg_3 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: none;
+            will-change: animation;
+            }
+        .svg_4 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: none;
+            will-change: animation;
+            }
+        .svg_10 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: none;
+            will-change: animation;
+            }
+        .svg_11 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: none;
+            will-change: animation;
+            }
+        .svg_12 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: none;
+            will-change: animation;
+             }
+
+        .svg_3.is-visible {
+            animation: dash 6s linear forwards;
+        }
+
+        .svg_11.is-visible {
+            animation: dash 6s linear forwards;
+            animation-delay: 2s;
+        }
+
+        .svg_4.is-visible {
+            animation: dash 10s linear forwards;
+        }
+
+        .svg_10.is-visible {
+            animation: dash 6s linear forwards;
+            animation-delay: 1.5s;
+        }
+
+        .svg_12.is-visible {
+            animation: dash 6s linear forwards;
+            animation-delay: 2.5s;
+        }
+
+        .crd1 {
+          opacity: 0;
+          animation: none;
+          will-change: animation, opacity;
+        }
+
+        .crd1.is-visible {
+          animation: comeUp .6s linear forwards, fadeIn .6s linear forwards;
+          opacity: 1;
+        }
+        .crd {
+          animation: expandtilt1 .5s ease-in-out forwards;
+        }
+        
+        .crd:hover {
+          animation: expandtilt .5s ease-in-out forwards;
+        }
+
+        @keyframes expandtilt {
+          from {transform: skewY(0deg) 
+          }
+          to {transform: skewY(1.5deg)}
+        }
+
+        @keyframes expandtilt1 {
+          from {transform: skewY(1.5deg) 
+          }
+          to {transform: skewY(0deg)}
+        }
+
+        .navbar {
+          animation: comeDown 1.5s linear forwards;
+        }
+
+        @keyframes comeDown {
+          from {transform: translateY(-100%)
+          }
+          to {transform: translateY(0%)}
+        }
+
+        .display-4, .lead {
+          animation: fadeIn 2s linear forwards;
+        }
+
+        @keyframes fadeIn {
+          from {opacity: 0;
+          }
+          to {opacity: 1;
+          }
+        }
+
+        @keyframes comeUp {
+          from {transform: translateY(50%)
+          } 
+          to {transform: translateY(0%)}
+        }
+            
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+    </style>
+    <title>GS</title>
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <nav class="navbar navbar-expand navbar-dark bg-info text-white fixed-top pl-5">
+        <a class="navbar-brand" href="#">GS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse position-sticky" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+            </li>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- END NAV BAR -->
+
+    <div id="home" class="jumbotron jumbotron-fluid text-center" style="background-image: url(background.jpg); opacity: 90%; background-size: cover;>
+        <div class="container">
+            <h2><br><br></h2>
+          <h3 class="display-4 text-white">Welcome</h3>
+          <p class="lead text-white">Gabe Sirwinski - Portfolio</p>
+          <h2><br></h2>
+        </div>
+      </div>
+      
+    
+      <div class="container pt-2 pb-5">
+        <div class="row">
+          <div class="col-sm-8 bg-light crd3">
+            <h3 class="display-4 text-left"><br></h3>
+          <p class="lead mx-5 text-left">My name is Gabe and I am a software developer in Los Angeles, CA.<br><br>My main languages are Python(including the Django web framework) and SQL(Oracle, MySQL, MS SQL Server), but I am fluent in other languages as well (C#, HTML/CSS, JavaScript). <br><br>Feel free to look around at my various software projects or contact me if you have any questions.<br><br></p>
+          </div>
+          <div class="col-sm-4 bg-light crd2">
+            <img src="gabe.jpg" class="ml-4 my-4 crd" alt="" style="max-width: 84%;">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm my-2">
+            <div class="card border-info" style="width: 100%;">
+                <svg class="pl-4" width="18rem" height="100%">
+                    <g>
+                     <title>background</title>
+                     <rect fill="#fff" id="canvas_background" height="272" width="322" y="-1" x="-1"/>
+                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                      <rect fill="url(#gridpattern)" stroke-width="2" y="0" x="0" height="100%" width="100%"/>
+                     </g>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <ellipse ry="58" rx="55.5" class="svg_3 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                     <ellipse stroke="#000" ry="5" rx="40" class="svg_10 show-on-scroll" cy="39.453125" cx="140" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+                     <ellipse stroke="#000" ry="6" rx="56.5" class="svg_11 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+                     <ellipse ry="4" rx="40.5" class="svg_12 show-on-scroll" cy="119.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                    </g>
+                   </svg>
+                <div class="card-body">
+                  <h5 class="card-title">Design</h5>
+                  <p class="card-text">Front-end design is an important part of any project. See my front-end projects below.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm my-5">
+            <div class="card border-info" style="width: 100%">
+                <svg class="pl-5" width="18rem" height="100%">
+                    <g>
+                     <title>background</title>
+                     <rect fill="#fff" id="canvas_background" height="292" width="200" y="-1" x="-1"/>
+                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                     </g>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <path class="svg_3 show-on-scroll" d="m49.175486,147.185851l28.928059,-39.93142l0,0c-30.646958,-12.045537 -39.392028,-34.736754 -20.203527,-52.422586c19.188141,-17.685729 60.030866,-24.577821 94.355638,-15.922384c34.324762,8.655387 50.899231,30.025467 38.290144,49.370406c-12.608421,19.344931 -50.273314,30.333612 -87.015299,25.386372l-54.355016,33.519613z" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_10 show-on-scroll" y2="53.453125" x2="148" y1="54.453125" x1="88" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_11 show-on-scroll" y2="70.453125" x2="167" y1="72.453125" x1="75" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_12 show-on-scroll" y2="89.453125" x2="153" y1="90.453125" x1="96" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                    </g>
+                   </svg>
+
+                <!-- Graphic goes here -->
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Connect</h5>
+                  <p class="card-text">Contact me below - I'd love to connect and collaborate on your next project!</p>
+                  <a href="#" class="btn btn-info text-center" data-toggle="modal" data-target="#contact">Contact</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm mt-2 mb-5">
+            <div class="card border-info" style="width: 100%;">
+                
+                <!-- NEXT GRAPHIC HERE -->
+
+                <svg class="pl-2" width="18rem" height="100%">
+                    <g>
+                     <title>background</title>
+                     <rect fill="#fff" id="canvas_background" height="192" width="292" y="-1" x="-1"/>
+                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                     </g>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <rect stroke="#000" class="svg_4 show-on-scroll" height="37" width="30" y="102.453125" x="92" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+                     <rect class="svg_10 show-on-scroll" height="66" width="32" y="74.453125" x="133" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                     <rect class="svg_12 show-on-scroll" height="100" width="37" y="40.453125" x="173" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                    </g>
+                   </svg>
+               
+                <div class="card-body">
+                  <h5 class="card-title">Build</h5>
+                  <p class="card-text">Back-end functionality and database management are key components of any project. See my back-end projects below.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h3 class="display-4 text-right"><br>Projects</h3>
+          <p class="lead text-right">Gabriel Sirwinski - Software Development Projects</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm my-5">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
+              <svg class="pl-4" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                 <title>background</title>
+                 <rect fill="#fff" id="canvas_background" height="202" width="292" y="-1" x="-1"/>
+                 <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                 </g>
+                </g>
+                <g>
+                 <title>Layer 1</title>
+                 <rect stroke="#000" rx="4" class="svg_3 show-on-scroll" height="73" width="153" y="53.453124" x="71.5" stroke-width="1.5" fill="#fff"/>
+                 <rect stroke="#000" rx="3" class="svg_3 show-on-scroll" height="51.999999" width="131.999997" y="62.453125" x="82.500003" fill-opacity="null" stroke-opacity="null" stroke-width="6" fill="#fff"/>
+                 <rect stroke="#000" class="svg_3 show-on-scroll" height="12" width="55" y="129.453125" x="123.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="#fff"/>
+                 <rect stroke="#000" class="svg_3 show-on-scroll" height="3" width="115.999995" y="147.453125" x="93.500005" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="#fff"/>
+                </g>
+               </svg>
+                <div class="card-body">
+                  <h5 class="card-title">Front-end</h5>
+                  <p class="card-text">Click the link below to see some of my front-end projects.</p>
+                  <a href="https://github.com/GabeSirwinski?tab=repositories" class="btn btn-info">See Front-end Projects</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%">
+                <img src="python_logo.png" alt="">
+
+                <!-- Graphic goes here -->
+                
+                <div class="card-body">
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">Click the link below to see some of my Python and Django projects.</p>
+                  <a href="https://github.com/GabeSirwinski/Basic-Python" class="btn btn-info">See Python Projects</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm my-5">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
+                
+                <!-- NEXT GRAPHIC HERE -->
+
+                <svg class="pl-3" width="290" height="200" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                   <title>background</title>
+                   <rect fill="#fff" id="canvas_background" height="202" width="292" y="-1" x="-1"/>
+                   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                   </g>
+                  </g>
+                  <g>
+                   <title>Layer 1</title>
+                   <rect class="svg_3 show-on-scroll" height="75" width="10" y="68.453125" x="134.5" stroke-width="11" stroke="#000" fill="#fff"/>
+                   <rect id="svg_3 show-on-scroll" height="75" width="10" y="67.453125" x="161.5" stroke-width="11" stroke="#000" fill="#fff"/>
+                   <rect stroke="#000" class="svg_3 show-on-scroll" height="10" width="80" y="83.453125" x="111.5" fill-opacity="null" stroke-opacity="null" stroke-width="11" fill="#fff"/>
+                   <rect stroke="#000" class="svg_3 show-on-scroll" height="10" width="80" y="112.453125" x="112.5" fill-opacity="null" stroke-opacity="null" stroke-width="11" fill="#fff"/>
+                   <ellipse opacity="0.5" ry="67.5" rx="69.5" class="svg_3 show-on-scroll" cy="104.953125" cx="152" fill-opacity="null" stroke-opacity="null" stroke-width="11" stroke="#000" fill="none"/>
+                  </g>
+                 </svg>
+               
+                <div class="card-body">
+                  <h5 class="card-title">C#</h5>
+                  <p class="card-text">Click the link below to see some of my C# and .NET projects.</p>
+                  <a href="#" class="btn btn-info">See C# Projects</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL-->
+
+      <div class="modal" tabindex="-1" role="dialog" id="contact">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            
+
+                <!--FORM-->
+
+                <form>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name here">
+                    </div>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput2">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your email here">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="home" class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <p class="lead text-muted">Gabe Sirwinski | Portfolio 2020</p>
+      </div>
+    </div>
+
+     
+
+
+
+    
+    
+    
+
+
+
+
+
+
+   
+    <script src="Scripts\show-on-scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     
+  </body>
+ 
+</html>
