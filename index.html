@@ -9,159 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-         .svg_3 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: none;
-            will-change: animation;
-            }
-        .svg_4 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: none;
-            will-change: animation;
-            }
-        .svg_10 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: none;
-            will-change: animation;
-            }
-        .svg_11 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: none;
-            will-change: animation;
-            }
-        .svg_12 {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: none;
-            will-change: animation;
-             }
-
-        .svg_3.is-visible {
-            animation: dash 3s linear forwards;
-        }
-
-        .svg_11.is-visible {
-            animation: dash 3s linear forwards;
-            animation-delay: 1s;
-        }
-
-        .svg_4.is-visible {
-            animation: dash 5s linear forwards;
-        }
-
-        .svg_10.is-visible {
-            animation: dash 3s linear forwards;
-            animation-delay: 0.7s;
-        }
-
-        .svg_12.is-visible {
-            animation: dash 2.5s linear forwards;
-            animation-delay: 1.3s;
-        }
-
-        .crd1 {
-          opacity: 0;
-          animation: none;
-          will-change: animation, opacity;
-        }
-
-        .crd1.is-visible {
-          animation: comeUp .6s linear forwards, fadeIn .6s linear forwards;
-          opacity: 1;
-        }
-        .crd {
-          animation: expandtilt1 .5s ease-in-out forwards;
-        }
-        
-        .crd:hover {
-          animation: expandtilt .5s ease-in-out forwards;
-        }
-
-        @keyframes expandtilt {
-          from {transform: skewY(0deg) 
-          }
-          to {transform: skewY(1.5deg)}
-        }
-
-        @keyframes expandtilt1 {
-          from {transform: skewY(1.5deg) 
-          }
-          to {transform: skewY(0deg)}
-        }
-
-        .navbar {
-          animation: comeDown 1.5s linear forwards;
-        }
-
-        @keyframes comeDown {
-          from {transform: translateY(-100%)
-          }
-          to {transform: translateY(0%)}
-        }
-
-        .display-4, .lead {
-          animation: fadeIn 2s linear forwards;
-        }
-
-        @keyframes fadeIn {
-          from {opacity: 0;
-          }
-          to {opacity: 1;
-          }
-        }
-
-        @keyframes comeUp {
-          from {transform: translateY(50%)
-          } 
-          to {transform: translateY(0%)}
-        }
-            
-
-        @keyframes dash {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        .fa {
-          padding: 20px;
-          font-size: 30px;
-          width: 60px;
-          text-align: center;
-          text-decoration: none;
-        }
-        .fa:hover {
-          opacity: 0.7;
-        }
-
-        .fa-linkedin {
-          background: #007bb5;
-          color: white;
-        }
-
-        .fa-facebook {
-          background: #3B5998;
-          color: white;
-        }
-
-    </style>
+    <link rel="stylesheet" href="site.css">
     <title>GS</title>
   </head>
   <body>
     <!--NAV BAR-->
-    <nav class="navbar navbar-expand navbar-dark bg-info text-white fixed-top pl-5">
+    <nav id="main_navbar" class="navbar navbar-expand navbar-dark bg-info text-white text-right p-2 fixed-top pl-5">
         <a class="navbar-brand" href="#">GS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">GS</span>
         </button>
       
         <div class="collapse navbar-collapse position-sticky" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto brackets">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -193,7 +53,7 @@
         <div class="row">
           <div class="col-sm-8 bg-light crd3">
             <h3 class="display-4 text-left"><br></h3>
-          <p class="lead mx-5 text-left">My name is Gabe and I am a software developer in Los Angeles, CA.<br><br>My main language is Python (including the Django web framework), but I am fluent in other languages as well (SQL, C#, HTML/CSS, JavaScript). <br><br>Feel free to look around at my various software projects or contact me if you have any questions.<br><br></p>
+          <p class="lead mx-5 text-left">My name is Gabe and I am a software developer in Los Angeles, CA.<br><br>My main language is Python(including the Django web framework), but I am fluent in other languages as well (SQL, C#, HTML/CSS, JavaScript). <br><br>Feel free to look around at my various software projects or contact me if you have any questions.<br><br></p>
           </div>
           <div class="col-sm-4 bg-light crd2">
             <img src="gabe.jpg" class="ml-4 my-4 crd" alt="" style="max-width: 84%;">
@@ -208,7 +68,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm my-2">
-            <div class="card border border-white" style="width: 100%;">
+            <div class="card border-info" style="width: 100%;">
                 <svg class="pl-4" width="18rem" height="100%">
                     <g>
                      <title>background</title>
@@ -232,7 +92,7 @@
               </div>
           </div>
           <div class="col-sm my-5">
-            <div class="card border border-white" style="width: 100%">
+            <div class="card border-info" style="width: 100%">
                 <svg class="pl-5" width="18rem" height="100%">
                     <g>
                      <title>background</title>
@@ -260,7 +120,7 @@
               </div>
           </div>
           <div class="col-sm mt-2 mb-5">
-            <div class="card border border-white" style="width: 100%;">
+            <div class="card border-info" style="width: 100%;">
                 
                 <!-- NEXT GRAPHIC HERE -->
 
@@ -298,7 +158,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm my-5">
-            <div class="card crd1 show-on-scroll border border-white" style="width: 100%;">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
               <svg class="pl-4" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
                 <g>
                  <title>background</title>
@@ -318,12 +178,12 @@
                 <div class="card-body">
                   <h5 class="card-title">Front-end</h5>
                   <p class="card-text">Click the link below to see some of my front-end projects.</p>
-                  <a href="https://github.com/GabeSirwinski?tab=repositories" class="btn btn-info">See Front-end Projects</a>
+                  <a href="https://github.com/GabeSirwinski" class="btn btn-info">See Front-end Projects</a>
                 </div>
               </div>
           </div>
           <div class="col-sm my-3">
-            <div class="card crd1 show-on-scroll border border-white" style="width: 100%">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%">
                 <img src="python_logo.png" alt="">
 
                 <!-- Graphic goes here -->
@@ -331,12 +191,12 @@
                 <div class="card-body">
                   <h5 class="card-title">Python</h5>
                   <p class="card-text">Click the link below to see some of my Python and Django projects.</p>
-                  <a href="https://github.com/GabeSirwinski/Basic-Python" class="btn btn-info">See Python Projects</a>
+                  <a href="https://github.com/GabeSirwinski" class="btn btn-info">See Python Projects</a>
                 </div>
               </div>
           </div>
           <div class="col-sm my-5">
-            <div class="card crd1 show-on-scroll border border-white" style="width: 100%;">
+            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
                 
                 <!-- NEXT GRAPHIC HERE -->
 
@@ -361,7 +221,7 @@
                 <div class="card-body">
                   <h5 class="card-title">C#</h5>
                   <p class="card-text">Click the link below to see some of my C# and .NET projects.</p>
-                  <a href="https://github.com/GabeSirwinski/Basic-C-Sharp" class="btn btn-info">See C# Projects</a>
+                  <a href="https://github.com/GabeSirwinski" class="btn btn-info">See C# Projects</a>
                 </div>
               </div>
           </div>

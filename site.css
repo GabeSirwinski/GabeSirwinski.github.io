@@ -1,0 +1,178 @@
+.svg_3 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: none;
+    will-change: animation;
+    }
+.svg_4 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: none;
+    will-change: animation;
+    }
+.svg_10 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: none;
+    will-change: animation;
+    }
+.svg_11 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: none;
+    will-change: animation;
+    }
+.svg_12 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: none;
+    will-change: animation;
+     }
+
+.svg_3.is-visible {
+    animation: dash 3s linear forwards;
+}
+
+.svg_11.is-visible {
+    animation: dash 3s linear forwards;
+    animation-delay: 1s;
+}
+
+.svg_4.is-visible {
+    animation: dash 5s linear forwards;
+}
+
+.svg_10.is-visible {
+    animation: dash 3s linear forwards;
+    animation-delay: 0.7s;
+}
+
+.svg_12.is-visible {
+    animation: dash 2.5s linear forwards;
+    animation-delay: 1.3s;
+}
+
+.crd1 {
+  opacity: 0;
+  animation: none;
+  will-change: animation, opacity;
+}
+
+.crd1.is-visible {
+  animation: comeUp .6s linear forwards, fadeIn .6s linear forwards;
+  opacity: 1;
+}
+.crd {
+  animation: expandtilt1 .5s ease-in-out forwards;
+}
+
+.crd:hover {
+  animation: expandtilt .5s ease-in-out forwards;
+}
+
+@keyframes expandtilt {
+  from {transform: skewY(0deg) 
+  }
+  to {transform: skewY(1.5deg)}
+}
+
+@keyframes expandtilt1 {
+  from {transform: skewY(1.5deg) 
+  }
+  to {transform: skewY(0deg)}
+}
+
+.navbar {
+  animation: comeDown 1.5s linear forwards;
+}
+
+@keyframes comeDown {
+  from {transform: translateY(-100%)
+  }
+  to {transform: translateY(0%)}
+}
+
+.display-4, .lead {
+  animation: fadeIn 2s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;
+  }
+  to {opacity: 1;
+  }
+}
+
+@keyframes comeUp {
+  from {transform: translateY(50%)
+  } 
+  to {transform: translateY(0%)}
+}
+    
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#main_navbar {
+  transition: 0.4s;
+}
+
+a.nav-link {
+  font-size: 1.1rem;
+  cursor: pointer;
+
+}
+
+ul.brackets a:before, ul.brackets a:after
+{
+    position: sticky;
+    opacity: 0;
+    font-size: 1.4rem;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+
+ul.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+ul.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+ul.brackets a:hover:before, ul.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
