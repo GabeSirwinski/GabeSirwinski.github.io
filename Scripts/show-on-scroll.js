@@ -34,21 +34,8 @@ function isElementInViewport(el) {
   );
 }
 
-// Navbar expand on scroll
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    $('#main_navbar').removeClass('p-2');
-    $('#main_navbar').addClass('p-4');
-  } else {
-    $('#main_navbar').removeClass('p-4');
-    $('#main_navbar').addClass('p-2');
-  }
-}
-
-//Navbar disappear on scroll down
+//Navbar disappear on scroll down, Navbar expand on scroll down, shrink at top of page
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -60,9 +47,9 @@ window.onscroll = function() {
   }
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     $('#main_navbar').removeClass('p-2');
-    $('#main_navbar').addClass('p-4');
+    $('#main_navbar').addClass('p-3');
   } else {
-    $('#main_navbar').removeClass('p-4');
+    $('#main_navbar').removeClass('p-3');
     $('#main_navbar').addClass('p-2');
   }
   prevScrollpos = currentScrollPos;
