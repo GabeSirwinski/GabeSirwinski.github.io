@@ -10,28 +10,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="site.css">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
     <title>GS</title>
   </head>
   <body>
     <!--NAV BAR-->
-    <nav id="main_navbar" class="navbar navbar-expand-lg navbar-dark bg-info text-white p-2 fixed-top pl-5">
-        <a class="navbar-brand" href="#">GS</a>
+    <nav id="main_navbar" class="navbar navbar-expand-lg navbar-dark bg-none text-white p-1 fixed-top pl-5">
+        <a class="navbar-brand" style="font-size: 4vh;" href="#">GS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse position-sticky" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse position-sticky text-white" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto brackets">
           </ul>
           <ul class="navbar-nav mx-5 brackets">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link text-left active" style="font-size: 4vh;" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link text-left active" style="font-size: 4vh;" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+              <a class="nav-link text-left active" style="font-size: 4vh;" data-toggle="modal" data-target="#contact">Contact</a>
             </li>
               </div>
             </li>
@@ -44,8 +45,8 @@
     <div id="home" class="jumbotron jumbotron-fluid text-center" style="background-image: url(background.jpg); opacity: 90%; background-size: cover;">
         <div class="container">
             <h2><br><br></h2>
-          <h3 class="display-4 text-white">Welcome</h3>
-          <p class="lead text-white">Gabe Sirwinski - Portfolio</p>
+          <p class="display-4 text-white hide-me">Welcome</p>
+          <p class="lead text-white hide-me">Gabe Sirwinski - Portforlio</p>
           <h2><br></h2>
         </div>
       </div>
@@ -154,7 +155,7 @@
       <div id="projects" class="jumbotron jumbotron-fluid">
         <div class="container">
           <h3 class="display-4 text-right"><br>Projects</h3>
-          <p class="lead text-right">Gabriel Sirwinski - Software Development Projects</p>
+          <p class="lead text-right">Gabe Sirwinski - Software Development Projects</p>
         </div>
       </div>
       <div class="container">
@@ -180,7 +181,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Front-end</h5>
                   <p class="card-text">Click the link below to see some of my front-end projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">See Front-end Projects</a>
+                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
                 </div>
               </div>
           </div>
@@ -193,7 +194,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">Python</h5>
                   <p class="card-text">Click the link below to see some of my Python and Django projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">See Python Projects</a>
+                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
                 </div>
               </div>
           </div>
@@ -223,7 +224,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title">C#</h5>
                   <p class="card-text">Click the link below to see some of my C# and .NET projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">See C# Projects</a>
+                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
                 </div>
               </div>
           </div>
@@ -269,31 +270,16 @@
         </div>
     </div>
 
-    <div id="home" class="jumbotron jumbotron-fluid text-center mt-4">
+    <div class="jumbotron jumbotron-fluid text-center mt-4 mb-0 py-1 pt-3">
       <div class="container">
         <p class="lead text-muted">Gabe Sirwinski | Portfolio 2020</p>
       </div>
     </div>
 
-     
-
-
-
-    
-    
-    
-
-
-
-
-
-
-   
-    <script src="Scripts\show-on-scroll.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     
+    <script src="Scripts\show-on-scroll.js"></script>
   </body>
  
 </html>

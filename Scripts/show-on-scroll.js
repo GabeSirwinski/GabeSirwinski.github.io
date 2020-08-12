@@ -1,4 +1,6 @@
 
+// Element effects on scrolling into viewport
+
 var scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
@@ -13,8 +15,6 @@ function loop() {
 
   scroll(loop);
 }
-
-
 
 loop();
 function isElementInViewport(el) {
@@ -46,11 +46,27 @@ window.onscroll = function() {
     $('#main_navbar').css('opacity','0');
   }
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    $('#main_navbar').removeClass('p-2');
+    $('#main_navbar').removeClass('p-1');
+    $('#main_navbar').removeClass('bg-none');
+    $('#main_navbar').addClass('bg-info');
     $('#main_navbar').addClass('p-3');
   } else {
     $('#main_navbar').removeClass('p-3');
-    $('#main_navbar').addClass('p-2');
+    $('#main_navbar').removeClass('bg-info');
+    $('#main_navbar').addClass('bg-none');
+    $('#main_navbar').addClass('p-1');
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+// Main jumbotron hide for collapsing menu
+
+$('.navbar-toggler').on('click', function(){
+  if($('.hide-me').hasClass('text-white')){
+    $('.hide-me').removeClass('text-white');
+  } else {
+    $('.hide-me').addClass('text-white');
+  }
+});
+

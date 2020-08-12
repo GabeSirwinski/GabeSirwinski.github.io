@@ -82,9 +82,9 @@
   to {transform: skewY(0deg)}
 }
 
-.navbar {
-  animation: comeDown 1.5s linear forwards;
-}
+/* .navbar {
+  animation: fadeIn .5s linear forwards;
+} */
 
 @keyframes comeDown {
   from {transform: translateY(-100%)
@@ -151,7 +151,7 @@ ul.brackets a:before, ul.brackets a:after
 {
     position: sticky;
     opacity: 0;
-    font-size: 1.4rem;
+    font-size: 4vh;
     top: 0px;
     transition: all 0.3s;
 }
@@ -176,3 +176,7 @@ ul.brackets a:hover:before, ul.brackets a:hover:after
     opacity: 1;
     transform: translateX(0px);
 }
+
+
+
+
