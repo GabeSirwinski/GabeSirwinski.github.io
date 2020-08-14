@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
     <link rel="stylesheet" href="site.css">
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
     <title>GS</title>
@@ -17,7 +19,7 @@
     <!--NAV BAR-->
     <nav id="main_navbar" class="navbar navbar-expand-lg navbar-dark bg-none text-white p-1 fixed-top pl-5">
         <a class="navbar-brand" style="font-size: 4vh;" href="#">GS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -45,8 +47,20 @@
     <div id="home" class="jumbotron jumbotron-fluid text-center" style="background-image: url(background.jpg); opacity: 90%; background-size: cover;">
         <div class="container">
             <h2><br><br></h2>
-          <p class="display-4 text-white hide-me">Welcome</p>
-          <p class="lead text-white hide-me">Gabe Sirwinski - Portforlio</p>
+          <svg width="220" height="70" xmlns="http://www.w3.org/2000/svg">
+            <g>
+             <title>background</title>
+             <rect fill="rgba(0,0,0,0)" id="canvas_background" height="90" width="242" y="-1" x="-1"/>
+             <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+              <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+             </g>
+            </g>
+            <g>
+             <title>Layer 1</title>
+             <text class="svg_3 is-visible hide-me" font-weight="normal" font-style="normal" xml:space="preserve" text-anchor="start" font-family="Alegreya Sans" font-size="58" id="svg_2" y="60" x="2" stroke-width="2" stroke="#fcfcf9" fill="rgba(0,0,0,0)">Welcome</text>
+            </g>
+           </svg>
+          <p class="sub-headline text-white hide-me" style="opacity: 1;">Gabe Sirwinski - Portforlio</p>
           <h2><br></h2>
         </div>
       </div>
@@ -68,7 +82,7 @@
 
 
 
-      <div class="container">
+      <div class="container my-4">
         <div class="row">
           <div class="col-sm my-2">
             <div class="card border-info" style="width: 100%;">
@@ -88,13 +102,13 @@
                      <ellipse ry="4" rx="40.5" class="svg_12 show-on-scroll" cy="119.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#007bb5" fill="#fff"/>
                     </g>
                    </svg>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h5 class="card-title">Design</h5>
                   <p class="card-text">Front-end design is an important part of any project. See my front-end projects below.</p>
                 </div>
               </div>
           </div>
-          <div class="col-sm my-5">
+          <div class="col-sm my-2">
             <div class="card border-info" style="width: 100%">
                 <svg class="pl-4 mx-auto" width="18rem" height="100%">
                     <g>
@@ -122,7 +136,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm mt-2 mb-5">
+          <div class="col-sm my-2">
             <div class="card border-info" style="width: 100%;">
                 
                 <!-- NEXT GRAPHIC HERE -->
@@ -143,7 +157,7 @@
                     </g>
                    </svg>
                
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h5 class="card-title">Build</h5>
                   <p class="card-text">Back-end functionality and database management are key components of any project. See my back-end projects below.</p>
                 </div>
@@ -154,14 +168,16 @@
 
       <div id="projects" class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h3 class="display-4 text-right"><br>Projects</h3>
-          <p class="lead text-right">Gabe Sirwinski - Software Development Projects</p>
+          <h3 class="headline text-center">Projects</h3>
+          <p class="sub-headline text-center">Gabe Sirwinski - Software Development Projects</p>
         </div>
       </div>
-      <div class="container">
+
+
+      <div class="container my-3">
         <div class="row">
-          <div class="col-sm my-5">
-            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
+          <div class="col-sm my-3">
+            <div class="card crd1 show-on-scroll border border-secondary mx-auto" style="width: 100%; max-width: 30rem;">
               <svg class="px-auto mx-auto" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
                 <g>
                  <title>background</title>
@@ -185,8 +201,8 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm my-3">
-            <div class="card crd1 show-on-scroll border border-info mx-auto" style="width: 18rem;">
+          <div class="col-sm my-1">
+            <div class="card crd1 show-on-scroll border border-info mx-auto" style="width: 80%; max-width: 30rem;">
                 <img src="python_logo.png" alt="">
 
                 <!-- Graphic goes here -->
@@ -198,8 +214,8 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm my-5">
-            <div class="card crd1 show-on-scroll border border-info" style="width: 100%;">
+          <div class="col-sm my-3">
+            <div class="card crd1 show-on-scroll border border-secondary mx-auto" style="width: 100%; max-width: 30rem;">
                 
                 <!-- NEXT GRAPHIC HERE -->
 
@@ -231,6 +247,66 @@
         </div>
       </div>
 
+
+
+      <div id="projects" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h5 class="headline text-center">Highlights</h5>
+          <p class="sub-headline text-center">Gabe Sirwinski - Project Highlights</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col my-2">
+            
+            <div class="card crd1 show-on-scroll border border-info mx-auto p-1" style="width: 100%; max-width: 30rem;">
+             
+              <img class="color" src="golf_app.png" alt="">
+            
+
+                <div class="card-body text-center">
+                  <h5 class="card-title">GolfApp</h5>
+                  <p class="card-text">This was a Django site done with Python, HTML, CSS, and JavaScript. It uses several API calls and webscraping.</p>
+                  <a href="https://github.com/GabeSirwinski/Django-Golf-App" target="_blank" class="btn btn-info">View on GitHub</a>
+                </div>
+              </div>
+              
+          </div>
+          <div class="col my-2">
+            <div class="card crd1 show-on-scroll border border-info p-1 mx-auto" style="width: 100%; max-width: 30rem;">
+              <img class="color" src="messaging_app.png" alt="">
+
+                <!-- Graphic goes here -->
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">MessagingApp</h5>
+                  <p class="card-text">This was also a Django site I created in Visual Studio. It uses Django Models with AJAX to allow real-time messaging.</p>
+                  <a href="https://github.com/GabeSirwinski/Visual-Studio-Django" target="_blank" class="btn btn-info">View on GitHub</a>
+                </div>
+              </div>
+          </div>
+          <div class="col my-2">
+            <div class="card crd1 show-on-scroll border border-info p-1 mx-auto" style="width: 100%; max-width: 30rem;">
+              <img class="color" src="csharp_project.png" alt="">
+                
+                <!-- NEXT GRAPHIC HERE -->
+               
+                <div class="card-body text-center">
+                  <h5 class="card-title">C# Project</h5>
+                  <p class="card-text">This was a project I did with a team of students. It is a theater website was created with .NET MVC Entity Framework.</p>
+                  <a href="https://github.com/GabeSirwinski/C-Sharp-Live-Project" target="_blank" class="btn btn-info">View on GitHub</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
       <!--MODAL-->
 
       <div class="modal" tabindex="-1" role="dialog" id="contact">
@@ -255,8 +331,9 @@
                     <label for="formGroupExampleInput2">Email: gabrielczerwinski@live.com</label>
                     </div>
                     <div class="form-group text-center">
-                      <a href="https://m.facebook.com/gabe.czerwinski/" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a href="https://www.linkedin.com/in/gabriel-sirwinski-2814521a6/" class="fa fa-linkedin"></a>
+                      <a target="_blank" href="https://m.facebook.com/gabe.czerwinski/" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://www.github.com/GabeSirwinski"><img class="github_fa m-1" src="https://github.com/apple-touch-icon.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://www.linkedin.com/in/gabriel-sirwinski-2814521a6/" class="fa fa-linkedin"></a>
                       
                     </div>
                 </form>

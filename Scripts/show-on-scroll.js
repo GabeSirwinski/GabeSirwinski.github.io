@@ -65,8 +65,10 @@ window.onscroll = function() {
 $('.navbar-toggler').on('click', function(){
   if($('.hide-me').hasClass('text-white')){
     $('.hide-me').removeClass('text-white');
+    $('.hide-me').attr('stroke-width','0');
   } else {
     $('.hide-me').addClass('text-white');
+    $('.hide-me').attr('stroke-width','2');
   }
 });
 
