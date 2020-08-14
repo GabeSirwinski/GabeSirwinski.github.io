@@ -42,6 +42,15 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     $('#main_navbar').css('opacity','1');
+    if($('.navbar-toggler').hasClass('collapsed') == false){
+      $('.navbar-toggler').addClass('collapsed');
+      $('.navbar-toggler').attr('aria-expanded','false');
+      $('.navbar-collapse').removeClass('show');
+      if($('.hide-me').hasClass('text-white') == false){
+        $('.hide-me').addClass('text-white');
+        $('.hide-me').attr('stroke-width','2');
+      }
+    }
   } else if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
     $('#main_navbar').css('opacity','0');
   }
