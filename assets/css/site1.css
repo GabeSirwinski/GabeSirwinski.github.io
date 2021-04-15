@@ -294,6 +294,16 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     font-size: 2em;
 }
 
+@media only screen and (max-width: 1000px) {
+    .small {
+        font-size: 0.8em;
+    }
+    
+    .lead {
+        font-size: 1em;
+    }
+  }
+
 .large-title {
     font-size: 3em;
 }
@@ -730,3 +740,5 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         align-items: center;
         justify-content: center;
     }
+
+    video::-webkit-media-controls{display: none !important;}
