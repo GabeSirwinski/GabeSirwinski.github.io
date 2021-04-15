@@ -73,6 +73,14 @@
     display: block;
 }
 
+#bound-one {
+	background: #d0d8db;
+}
+
+.scroll-bound {
+	height: 300vh;
+}
+
 section {
     z-index: 1;
     position: relative;
@@ -151,7 +159,8 @@ body {
 .scroll-bound .content {
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: sticky;
+    position: -webkit-sticky;
     top:0;
     display: flex;
     flex-direction: column;
@@ -358,8 +367,8 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 }
 
 .pv {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -376,6 +385,10 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 
 .height-unset {
     height: unset !important;
+}
+
+.unstick {
+    position: fixed !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -710,3 +723,10 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
             padding-top: 0;
         }
       }
+
+    .intro-section {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

@@ -1,4 +1,43 @@
-// 
+const registerVideo = (bound, video) => {
+	bound = document.querySelector(bound);
+	video = document.querySelector(video);
+	const scrollVideo = ()=>{
+		if(video.duration) {
+			const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
+			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);			
+			video.currentTime = parseFloat(video.duration * rawPercentScrolled).toPrecision(3);
+            let aDiv = document.getElementById('a-div')
+            if (rawPercentScrolled > 0.3 && rawPercentScrolled < 0.9) {
+                if (!aDiv.classList.contains('animated')) {
+                    aDiv.classList.add('animated');
+                };
+            }
+            else {
+                if (aDiv.classList.contains('animated')) {
+                    aDiv.classList.remove('animated');
+                }
+            }
+            if (rawPercentScrolled < .99 && !video.classList.contains('unstick')) {
+                video.classList.add('unstick');
+            }
+            else if (rawPercentScrolled > .99 && video.classList.contains('unstick')) {
+                video.classList.remove('unstick');
+            }
+            if (rawPercentScrolled > .99 && !aDiv.classList.contains('d-none')) {
+                aDiv.classList.add('d-none');
+            }
+            else if (rawPercentScrolled < .99 && aDiv.classList.contains('d-none')) {
+                aDiv.classList.remove('d-none');
+            }
+            
+		}
+		requestAnimationFrame(scrollVideo);
+	}
+	requestAnimationFrame(scrollVideo);
+}
+
+
+registerVideo("#bound-one", "#bound-one video");
 
 function isInViewport(el) {
     const rect = el.getBoundingClientRect(); 

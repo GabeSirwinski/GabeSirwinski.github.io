@@ -22,7 +22,7 @@
      
     </div>
     <div class="app" id="content">
-        <div class="scroll-bound">
+        <div id="bound-one" class="scroll-bound">
             <div class="container pt100-mobile">
                 <h1 class="main">
                     <span class="text-slider-items">
@@ -32,21 +32,26 @@
                         <strong class="text-slider"></strong>
                     </span>
                 </h1>
+                <!-- <p class="white z10 text-center show-on-scroll fadeInBlink d-none-mobile">Scroll down to move forward</p>
+                <p class="white z10 text-center show-on-scroll fadeInBlink d-block-mobile">View on desktop for the full experience!</p> -->
+                <!-- <a href="#intro" class="button white lead centered show-on-scroll fadeIn" style="display: flex;">Introduction <img src="./assets/img/down-arrow.svg" alt="" style="max-height: 1em; padding-top: .5em;"> </a> -->
+            </div>
+            <div class="container" id="a-div">
+                    <div class="intro-section mw1000">
+                        <div>
+                            <h2 class="white show-on-scroll short fadeIn large-title centered mb0 mt00">Intro</h2>
+                            <p class="white show-on-scroll short fadeIn delay-05 small">Hi, my name is Gabe and I am a Full Stack Software Developer currently living and working in Salt Lake City, UT. Thank you for stopping by! I hope you enjoy this site as much as I enjoyed developing it. Through this site I'll let you know about my education, experience, and recent projects. I've left several ways to contact me, so feel free to reach out!</p>
+                        </div>
+                    </div>
             </div>
             <div class="content">
-                 <video width="600" id="video" muted preload autoplay loop poster="./assets/img/bg.jpg">
+                 <video width="600" id="video" muted preload autoplay poster="./assets/img/bg.jpg">
                     <source src="./assets/video/video.mp4" type="video/mp4">
-                    <source src="./assets/video/video.mp4" type="video/ogv">
-                    <source src="./assets/video/video.mp4" type="video/webm">
+                    <!-- <source src="./assets/video/video.ogv" type="video/ogv">
+                    <source src="./assets/video/video.webm" type="video/webm"> -->
                 </video>
             </div>
         </div>        
-    </div>
-    <div class="container small height-unset pv">
-        <div class="flex align-center mw1000">
-            <h2 class="dark-grey show-on-scroll short fadeIn large-title centered mb0 mt00">Intro</h2>
-            <p class="show-on-scroll short fadeIn delay-05 small">Hi, my name is Gabe and I am a Full Stack Software Developer currently living and working in Salt Lake City, UT. Thank you for stopping by! I hope you enjoy this site as much as I enjoyed developing it. Through this site I'll let you know about my education, experience, and recent projects. I've left several ways to contact me, so feel free to reach out!</p>
-        </div>
     </div>
     <div class="container small height-unset pv grey-bg">
         <div class="flex align-center">
@@ -127,8 +132,8 @@
 <script>
     var loader = new PxLoader(), 
     backgroundImg = loader.addVideo('./assets/video/video.mp4');
-    backgroundImg2 = loader.addVideo('./assets/video/video.ogv');
-    backgroundImg3 = loader.addVideo('./assets/video/video.ogv');
+    // backgroundImg2 = loader.addVideo('./assets/video/video.ogv');
+    // backgroundImg3 = loader.addVideo('./assets/video/video.ogv');
     loader.addCompletionListener(function() { 
         console.log("Loaded");
         setTimeout(function() {
@@ -143,7 +148,7 @@
             contentType: 'html',
         });
     }
-        }, 1000)
+        }, 4000)
     }); 
     loader.start(); 
 </script> 
