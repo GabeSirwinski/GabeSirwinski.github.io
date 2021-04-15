@@ -296,11 +296,11 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 
 @media only screen and (max-width: 1000px) {
     .small {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     
     .lead {
-        font-size: 1em;
+        font-size: 1.1em;
     }
   }
 
