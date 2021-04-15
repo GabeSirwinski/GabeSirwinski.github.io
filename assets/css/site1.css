@@ -677,3 +677,13 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         margin-top: 0;
         margin-bottom: 50px;
     }
+
+    .d-block-mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .d-block-mobile {
+            display: block;
+        }
+      }
