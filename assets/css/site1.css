@@ -331,6 +331,18 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     max-height: 50%;
 }
 
+@media only screen and (max-width: 1000px) {
+    .before {
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .after {
+        left: -10px !important;
+        max-width: 50% !important;
+    }
+  }
+
+
 .after {
     width: 15em;
     height: 15em;
