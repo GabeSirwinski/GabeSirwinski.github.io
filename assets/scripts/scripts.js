@@ -7,7 +7,7 @@ const registerVideo = (bound, video) => {
 			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);			
 			video.currentTime = parseFloat(video.duration * rawPercentScrolled).toPrecision(3);
             let aDiv = document.getElementById('a-div')
-            if (rawPercentScrolled > 0.3 && rawPercentScrolled < 0.9) {
+            if (rawPercentScrolled > 0.3 && rawPercentScrolled < 0.75) {
                 if (!aDiv.classList.contains('animated')) {
                     aDiv.classList.add('animated');
                 };
