@@ -367,7 +367,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     height: 15em;
     max-width: 20%;
     max-height: 50%;
-    background-color: white;
+    background-color: #294912;
     position: absolute;
     left: 100px;
 }
