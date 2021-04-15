@@ -744,5 +744,5 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     video::-webkit-media-controls{display: none !important;}
 
     .custom-video-controls {
-        z-index: 2147483647;
+        z-index: -2147483647;
       }
