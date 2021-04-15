@@ -343,7 +343,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 .before {
     width: 15em;
     height: 15em;
-    background-color: rgba(216, 216, 216, 0.631);
+    background-color: rgba(38, 38, 38, 0.631);
     position: absolute;
     right: 100px;
     max-width: 20%;
