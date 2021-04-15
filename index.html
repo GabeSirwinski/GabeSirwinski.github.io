@@ -1,385 +1,194 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="./assets/css/site1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
-    <title>GS</title>
-  </head>
-  <body>
-    <!--NAV BAR-->
-    <nav id="main_navbar" class="navbar navbar-expand-lg navbar-dark bg-none text-white p-1 fixed-top pl-5">
-        <a class="navbar-brand" style="font-size: 4vh;" href="#">GS</a>
-        <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse position-sticky text-white mr-3" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto brackets">
-          </ul>
-          <ul class="navbar-nav mx-5 brackets">
-            <li class="nav-item">
-              <a class="nav-link text-left active" style="font-size: 4vh;" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-left active" style="font-size: 4vh;" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-left active" style="font-size: 4vh;" data-toggle="modal" data-target="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-left active" style="font-size: 4vh;" data-toggle="modal" data-target="#resume">Resume</a>
-            </li>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    <!-- END NAV BAR -->
-
-    <div id="home" class="jumbotron jumbotron-fluid text-center" style="background-image: url(background.jpg); opacity: 90%; background-size: cover;">
-        <div class="container">
-            <h2><br><br></h2>
-          <svg width="220" height="70" xmlns="http://www.w3.org/2000/svg">
-            <g>
-             <title>background</title>
-             <rect fill="rgba(0,0,0,0)" id="canvas_background" height="90" width="242" y="-1" x="-1"/>
-             <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-              <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-             </g>
-            </g>
-            <g>
-             <title>Layer 1</title>
-             <text class="svg_3 is-visible hide-me" font-weight="normal" font-style="normal" xml:space="preserve" text-anchor="start" font-family="Alegreya Sans" font-size="58" id="svg_2" y="60" x="2" stroke-width="2" stroke="#fcfcf9" fill="rgba(0,0,0,0)">Welcome</text>
-            </g>
-           </svg>
-          <p class="sub-headline text-white hide-me" style="opacity: 1;">Gabe Sirwinski - Portforlio</p>
-          <h2><br></h2>
-        </div>
-      </div>
-      
-    
-      <div class="container pt-2 pb-5">
-        <div class="row">
-          <div class="col-sm-8 bg-light crd3">
-            <h3 class="display-4 text-left"><br></h3>
-          <p class="lead mx-5 text-left">My name is Gabe and I am a software developer living in Salt Lake City, UT.<br><br>My main language is Python(including the Django web framework), but I am fluent in other languages as well (SQL, C#, HTML/CSS, JavaScript). <br><br>Feel free to look around at my various software projects or contact me if you have any questions.<br><br></p>
-          </div>
-          <div class="col-sm-4 bg-light crd2">
-            <img src="gabe.jpg" class="ml-4 my-4 crd" alt="" style="max-width: 84%;">
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="container my-4">
-        <div class="row">
-          <div class="col-sm my-2">
-            <div class="card border-info" style="width: 100%;">
-                <svg class="px-auto mx-auto" width="18rem" height="100%">
-                    <g>
-                     <title>background</title>
-                     <rect fill="#fff" id="canvas_background" height="272" width="322" y="-1" x="-1"/>
-                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                      <rect fill="url(#gridpattern)" stroke-width="2" y="0" x="0" height="100%" width="100%"/>
-                     </g>
-                    </g>
-                    <g>
-                     <title>Layer 1</title>
-                     <ellipse ry="58" rx="55.5" class="svg_3 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#3B5998" fill="#fff"/>
-                     <ellipse stroke="#007bb5" ry="5" rx="40" class="svg_10 show-on-scroll" cy="39.453125" cx="140" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
-                     <ellipse stroke="#007bb5" ry="6" rx="56.5" class="svg_11 show-on-scroll" cy="79.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
-                     <ellipse ry="4" rx="40.5" class="svg_12 show-on-scroll" cy="119.453125" cx="140.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#007bb5" fill="#fff"/>
-                    </g>
-                   </svg>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Design</h5>
-                  <p class="card-text">Front-end design is an important part of any project. See my front-end projects below.</p>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm my-2">
-            <div class="card border-info" style="width: 100%">
-                <svg class="pl-4 mx-auto" width="18rem" height="100%">
-                    <g>
-                     <title>background</title>
-                     <rect fill="#fff" id="canvas_background" height="292" width="200" y="-1" x="-1"/>
-                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                     </g>
-                    </g>
-                    <g>
-                     <title>Layer 1</title>
-                     <path class="svg_3 show-on-scroll" d="m49.175486,147.185851l28.928059,-39.93142l0,0c-30.646958,-12.045537 -39.392028,-34.736754 -20.203527,-52.422586c19.188141,-17.685729 60.030866,-24.577821 94.355638,-15.922384c34.324762,8.655387 50.899231,30.025467 38.290144,49.370406c-12.608421,19.344931 -50.273314,30.333612 -87.015299,25.386372l-54.355016,33.519613z" stroke-width="1.5" stroke="#3B5998" fill="#fff"/>
-                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_10 show-on-scroll" y2="53.453125" x2="148" y1="54.453125" x1="88" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#007bb5" fill="none"/>
-                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_11 show-on-scroll" y2="70.453125" x2="167" y1="72.453125" x1="75" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#007bb5" fill="none"/>
-                     <line stroke-linecap="null" stroke-linejoin="null" class="svg_12 show-on-scroll" y2="89.453125" x2="153" y1="90.453125" x1="96" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#007bb5" fill="none"/>
-                    </g>
-                   </svg>
-
-                <!-- Graphic goes here -->
-                
-                <div class="card-body text-center">
-                  <h5 class="card-title">Connect</h5>
-                  <p class="card-text">Contact me below - I'd love to connect and collaborate on your next project!</p>
-                  <a href="#" class="btn btn-info text-center" data-toggle="modal" data-target="#contact">Contact</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm my-2">
-            <div class="card border-info" style="width: 100%;">
-                
-                <!-- NEXT GRAPHIC HERE -->
-
-                <svg class="px-auto mx-auto" width="18rem" height="100%">
-                    <g>
-                     <title>background</title>
-                     <rect fill="#fff" id="canvas_background" height="192" width="292" y="-1" x="-1"/>
-                     <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                      <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                     </g>
-                    </g>
-                    <g>
-                     <title>Layer 1</title>
-                     <rect stroke="#3B5998" class="svg_4 show-on-scroll" height="37" width="30" y="102.453125" x="92" fill-opacity="null" stroke-opacity="0.3" stroke-width="1.5" fill="none"/>
-                     <rect class="svg_10 show-on-scroll" height="66" width="32" y="74.453125" x="133" fill-opacity="null" stroke-opacity="0.6" stroke-width="1.5" stroke="#3B5998" fill="none"/>
-                     <rect class="svg_12 show-on-scroll" height="100" width="37" y="40.453125" x="173" fill-opacity="null" stroke-opacity="0.9" stroke-width="1.5" stroke="#3B5998" fill="none"/>
-                    </g>
-                   </svg>
-               
-                <div class="card-body text-center">
-                  <h5 class="card-title">Build</h5>
-                  <p class="card-text">Back-end functionality and database management are key components of any project. See my back-end projects below.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h3 class="headline text-center">Projects</h3>
-          <p class="sub-headline text-center">Gabe Sirwinski - Software Development Projects</p>
-        </div>
-      </div>
-
-
-      <div class="container my-3">
-        <div class="row">
-          <div class="col-sm my-3">
-            <div class="card crd1 show-on-scroll border border-secondary mx-auto" style="width: 100%; max-width: 30rem;">
-              <svg class="px-auto mx-auto" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                 <title>background</title>
-                 <rect fill="#fff" id="canvas_background" height="202" width="292" y="-1" x="-1"/>
-                 <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                 </g>
-                </g>
-                <g>
-                 <title>Layer 1</title>
-                 <rect stroke="#007bb5" rx="4" class="svg_3 show-on-scroll" height="73" width="153" y="53.453124" x="71.5" stroke-width="1.5" fill="#fff"/>
-                 <rect stroke="#3B5998" rx="3" class="svg_3 show-on-scroll" height="51.999999" width="131.999997" y="62.453125" x="82.500003" fill-opacity="null" stroke-opacity="null" stroke-width="6" fill="#fff"/>
-                 <rect stroke="#007bb5" class="svg_3 show-on-scroll" height="12" width="55" y="129.453125" x="123.5" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="#fff"/>
-                 <rect stroke="#3B5998" class="svg_3 show-on-scroll" height="3" width="115.999995" y="147.453125" x="93.500005" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="#fff"/>
-                </g>
-               </svg>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Front-end</h5>
-                  <p class="card-text">Click the link below to see some of my front-end projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm my-1">
-            <div class="card crd1 show-on-scroll border border-info mx-auto" style="width: 80%; max-width: 30rem;">
-                <img src="python_logo.png" alt="">
-
-                <!-- Graphic goes here -->
-                
-                <div class="card-body text-center">
-                  <h5 class="card-title">Python</h5>
-                  <p class="card-text">Click the link below to see some of my Python and Django projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm my-3">
-            <div class="card crd1 show-on-scroll border border-secondary mx-auto" style="width: 100%; max-width: 30rem;">
-                
-                <!-- NEXT GRAPHIC HERE -->
-
-                <svg class="px-auto mx-auto" width="290" height="180" xmlns="http://www.w3.org/2000/svg">
-                  <g>
-                   <title>background</title>
-                   <rect fill="#fff" id="canvas_background" height="202" width="292" y="-1" x="-1"/>
-                   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                   </g>
-                  </g>
-                  <g>
-                   <title>Layer 1</title>
-                   <rect class="svg_3 show-on-scroll" height="75" width="10" y="68.453125" x="134.5" stroke-width="11" stroke="#007bb5" fill="#fff"/>
-                   <rect id="svg_3 show-on-scroll" height="75" width="10" y="67.453125" x="161.5" stroke-width="11" stroke="#007bb5" fill="#fff"/>
-                   <rect stroke="#007bb5" class="svg_3 show-on-scroll" height="10" width="80" y="83.453125" x="111.5" fill-opacity="null" stroke-opacity="null" stroke-width="11" fill="#fff"/>
-                   <rect stroke="#007bb5" class="svg_3 show-on-scroll" height="10" width="80" y="112.453125" x="112.5" fill-opacity="null" stroke-opacity="null" stroke-width="11" fill="#fff"/>
-                   <ellipse opacity="0.5" ry="67.5" rx="69.5" class="svg_3 show-on-scroll" cy="104.953125" cx="152" fill-opacity="null" stroke-opacity="null" stroke-width="11" stroke="#007bb5" fill="none"/>
-                  </g>
-                 </svg>
-               
-                <div class="card-body text-center">
-                  <h5 class="card-title">C#</h5>
-                  <p class="card-text">Click the link below to see some of my C# and .NET projects.</p>
-                  <a href="https://github.com/GabeSirwinski" target="_blank" class="btn btn-info">View GitHub</a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div id="projects" class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h5 class="headline text-center">Highlights</h5>
-          <p class="sub-headline text-center">Gabe Sirwinski - Project Highlights</p>
-        </div>
-      </div>
-
-
-
-
-      <div class="container my-5">
-        <div class="row">
-          <div class="col my-2">
-            
-            <div class="card crd1 show-on-scroll border border-info mx-auto p-1" style="width: 100%; max-width: 30rem;">
-             
-              <img class="color" src="golf_app.png" alt="">
-            
-
-                <div class="card-body text-center">
-                  <h5 class="card-title">GolfApp</h5>
-                  <p class="card-text">This was a Django site done with Python, HTML, CSS, and JavaScript. It uses several API calls and webscraping.</p>
-                  <a href="https://github.com/GabeSirwinski/Django-Golf-App" target="_blank" class="btn btn-info">View on GitHub</a>
-                </div>
-              </div>
-              
-          </div>
-          <div class="col my-2">
-            <div class="card crd1 show-on-scroll border border-info p-1 mx-auto" style="width: 100%; max-width: 30rem;">
-              <img class="color" src="messaging_app.png" alt="">
-
-                <!-- Graphic goes here -->
-                
-                <div class="card-body text-center">
-                  <h5 class="card-title">MessagingApp</h5>
-                  <p class="card-text">This was also a Django site I created in Visual Studio. It uses Django Models with AJAX to allow real-time messaging.</p>
-                  <a href="https://github.com/GabeSirwinski/Visual-Studio-Django" target="_blank" class="btn btn-info">View on GitHub</a>
-                </div>
-              </div>
-          </div>
-          <div class="col my-2">
-            <div class="card crd1 show-on-scroll border border-info p-1 mx-auto" style="width: 100%; max-width: 30rem;">
-              <img class="color" src="csharp_project.png" alt="">
-                
-                <!-- NEXT GRAPHIC HERE -->
-               
-                <div class="card-body text-center">
-                  <h5 class="card-title">C# Project</h5>
-                  <p class="card-text">This was a project I did with a team of students. It is a theater website was created with .NET MVC Entity Framework.</p>
-                  <a href="https://github.com/GabeSirwinski/C-Sharp-Live-Project" target="_blank" class="btn btn-info">View on GitHub</a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!--MODAL-->
-
-      <div class="modal" tabindex="-1" role="dialog" id="contact">
-        <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title">Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+    <title>Full Stack Web Developer in Salt Lake City | Gabe Sirwinski</title>
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+     
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
+    </div>
+    <div class="app" id="content">
+        <div id="bound-one" class="scroll-bound">
+            <div class="container pt100-mobile">
+                <h1 class="main">
+                    <span class="text-slider-items">
+                        Gabe Sirwinski Portfolio Site
+                    </span><br>
+                    <span>
+                        <strong class="text-slider"></strong>
+                    </span>
+                </h1>
+                <p class="white z10 text-center show-on-scroll fadeInBlink">Scroll down to move forward</p>
+                <!-- <a href="#intro" class="button white lead centered show-on-scroll fadeIn" style="display: flex;">Introduction <img src="./assets/img/down-arrow.svg" alt="" style="max-height: 1em; padding-top: .5em;"> </a> -->
             </div>
-            <div class="modal-body">
-            
-
-                <!--FORM-->
-
-                <form>
-                    <div class="form-group text-center">
-                    <label for="formGroupExampleInput">Phone: (626) 201 - 9451</label>
+            <div class="container" id="a-div">
+                <div class="flex">
+                    <div class="margin-align">
+                        <h2 class="light-grey show-on-scroll fadeIn title">Introduction</h2>
+                        <p class="white show-on-scroll fadeIn delay-05 lead">Hi, my name is Gabe and I am a Full Stack Software Developer currently living and working in Salt Lake City, UT. Thank you for stopping by! I hope you enjoy this site as much as I enjoyed developing it. Through this site I'll let you know about my education, experience, and recent projects. I've left several ways to contact me, so feel free to reach out!</p>
+                        <p class="white show-on-scroll fadeIn delay-1 small"></p>
                     </div>
-                    <div class="form-group text-center">
-                    <label for="formGroupExampleInput2">Email: gabrielczerwinski@live.com</label>
+                    <div></div>
+                </div>
+            </div>
+            <div class="container" id="b-div">
+                <div class="flex">
+                    <div class="d-none-mobile">
                     </div>
-                    <div class="form-group text-center">
-                      <a target="_blank" href="https://m.facebook.com/gabe.czerwinski/" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a target="_blank" href="https://www.github.com/GabeSirwinski"><img class="github_fa m-1" src="https://github.com/apple-touch-icon.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a target="_blank" href="https://www.linkedin.com/in/gabriel-sirwinski-2814521a6/" class="fa fa-linkedin"></a>
-                      
+                    <div>
+                        <h2 class="light-grey show-on-scroll fadeIn title">Professional Experience</h2>
+                        <p class="white show-on-scroll fadeIn delay-05 lead">I am currently working for a Digital Marketing Agency called <a href="http://influxmarketing.com" target="_blank" style="color: white;" rel="noopener noreferrer">Influx Marketing</a>. They specialize in highly customized websites for Plastic Surgeons and Medspas. In my day to day, I use <strong>HTML, SCSS, Javascript, PHP, Figma, & Node.js</strong> to help build these sites. In the next section of this site I list several sites that I was the Lead Developer on, which are now live for you to view.</p>
                     </div>
-                </form>
-
+                </div>
+            </div>
+            <div class="container" id="c-div">
+                <div class="flex align-center">
+                    <div style="margin-left: auto; margin-right: auto;">
+                        <div class="">
+                            <h2 class="light-grey show-on-scroll fadeIn title">Education</h2>
+                            <p class="white show-on-scroll fadeIn delay-05 lead">I attended a coding bootcamp called The Tech Academy from April 2020 to August 2020. I have been actively employed as a Web Developer since September 2020. The two main technologies I learned on the bootcamp were <strong>Python (including Django) & C# (including .NET MVC)</strong>. Since graduating, I have continued my course of studies, taking courses on <strong>React, React Native, Node.js, & more.</strong> I am currently taking a course on Data Structures & Algorithms in Java.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                 <video width="600" id="video" muted preload>
+                    <source src="./assets/video/video.mp4" >
+                </video>
+            </div>
+        </div>        
+    </div>
+    <div class="container height-unset small pt">
+        <h2 class="dark-grey show-on-scroll short fadeIn large-title text-center mb0">Recent Projects</h2>
+        <p class="small show-on-scroll fadeIn text-center mt0">Select A Project To Go To The Live Site</p>
+        <div class="swiper-container-1 relative">
+            <img src="./assets/img/swipe.png" alt="" class="swipe-icon show-on-scroll fadeUpIn" id="swipe-icon1">
+            <div class="swiper-wrapper">
+                <a target="_blank" rel="noopener" href="https://refinesurgery.com/" class="swiper-slide bg-cover" style="background-image:url(./assets/img/refine.jpg)"></a>
+                <a target="_blank" rel="noopener" href="https://www.ordonchopra.com/" class="swiper-slide bg-cover" style="background-image:url(./assets/img/ordon.jpg)"></a>
+                <a target="_blank" rel="noopener" href="https://zbodysculpt.com/" class="swiper-slide bg-cover" style="background-image:url(./assets/img/zelko.jpg)"></a>
+                <a target="_blank" rel="noopener" href="https://www.rejuvenatecolorado.com/" class="swiper-slide bg-cover" style="background-image:url(./assets/img/rejuvenate.jpg)"></a>
+                <a target="_blank" rel="noopener" href="https://www.mellanoorthopedics.com/" class="swiper-slide bg-cover" style="background-image:url(./assets/img/mellano1.jpg)"></a>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    <div class="container small height-unset pt">
+        <div class="flex align-center">
+            <div>
+                <h2 class="dark-grey show-on-scroll short fadeIn title">Personal Interests</h2>
+                <p class="show-on-scroll short fadeIn delay-05 lead">I am originally from Los Angeles, but moved to Salt Lake City mid 2020. Since moving here, I have had the opportunity to enjoy many outdoor activities, such as fishing, snowboarding, dune buggying, etc. I am very happy living in Utah and the place is just beautiful.</p>
+                <p class="show-on-scroll short fadeIn delay-1 small">I really enjoy furthering my studies into more advanced computer science concepts, new technologies, and just learning in general. I enjoy hanging out with friends, watching movies and TV, and watching Utah Jazz games. I also play golf and basketball regularly and like to stay active to counter the effects of sitting all day (lol).</p>
 
             </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div>
+                <div class="img-class box">
+                    <div class="before"></div>
+                    <img src="./assets/img/gabe.jpg" alt="">
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
-
-    <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-info" id="exampleModalLongTitle">Resume</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-          <img class="col-12" src="resume_1.jpg" alt="">
-          <hr>
-          <img class="col-12" src="resume_2.jpg" alt="">
-          </div>
+        <div class="container small pt">
+            <img src="./assets/img/world.jpg" alt="" class="background-image lighten">
+            <h2 class="large-title dark-grey show-on-scroll fadeIn text-center pt25-mobile pt100">Contact Me</h2>
+            <div class="swiper-container-2 relative">
+                <img src="./assets/img/swipe.png" alt="" class="swipe-icon show-on-scroll fadeUpIn" id="swipe-icon2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-color: #D3D3D3; border: 3px solid #9b9999;"><a href="mailto:gabesirwinski@outlook.com"><img src="./assets/img/email.png" alt="" class="contact-icon"></a></div>
+                  <div class="swiper-slide" style="background-color: #D3D3D3; border: 3px solid #9b9999;"><a href="tel:+6262019451"><img src="./assets/img/phone.png" alt="" class="contact-icon"></a></div>
+                  <div class="swiper-slide" style="background-color: #D3D3D3; border: 3px solid #9b9999;"><a href="https://www.linkedin.com/in/gabriel-sirwinski-2814521a6/" target="_blank" rel="noopener"><img src="./assets/img/linkedin.png" alt="" class="contact-icon"></a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+              <p class="white lead text-center" style="display: block; margin-top: auto; padding-top: 50px;">Gabe Sirwinski | Portfolio 2021</p>
         </div>
-      </div>
-    </div>
 
 
-    <div class="jumbotron jumbotron-fluid text-center mt-4 mb-0 py-1 pt-3">
-      <div class="container">
-        <p class="lead text-muted">Gabe Sirwinski | Portfolio 2020</p>
-      </div>
-    </div>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="Scripts\show-on-scroll.js"></script>
-  </body>
- 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="./assets/scripts/show-on-scroll.js"></script>
+<script src="./assets/scripts/scripts.js"></script>
+<script src="./assets/scripts/typed/lib/typed.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/scripts/PxLoader.js"></script>
+<script type="text/javascript" src="./assets/scripts/PxLoaderVideo.js"></script>
+<script>
+    var loader = new PxLoader(), 
+    backgroundImg = loader.addVideo('./assets/video/video.mp4');
+    loader.addCompletionListener(function() { 
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+            if ($(".text-slider").length == 1) {
+            var typed_strings = $(".text-slider-items").text();
+            var typed = new Typed(".text-slider", {
+            strings: typed_strings.split(", "),
+            typeSpeed: 50,
+            backDelay: 900,
+            backSpeed: 3,
+            contentType: 'html',
+        });
+    }
+        }, 2500)
+    }); 
+    loader.start(); 
+</script> 
+<script>
+    var swiper = new Swiper('.swiper-container-1', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      breakpoints: {
+        500: {
+        slidesPerView: 3,
+        spaceBetween: 20
+        },
+    },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+</script>
+<script>
+        var swiper2 = new Swiper('.swiper-container-2', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+</script>
 </html>
