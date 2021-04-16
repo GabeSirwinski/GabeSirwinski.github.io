@@ -294,7 +294,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     font-size: 2em;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     .small {
         font-size: 0.9em;
     }
