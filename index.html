@@ -132,8 +132,8 @@
 <script>
     var loader = new PxLoader(), 
     backgroundImg = loader.addVideo('./assets/video/video.mp4');
-    // backgroundImg2 = loader.addVideo('./assets/video/video.ogv');
-    // backgroundImg3 = loader.addVideo('./assets/video/video.ogv');
+    backgroundImg2 = loader.addVideo('./assets/video/video.ogv');
+    backgroundImg3 = loader.addVideo('./assets/video/video.ogv');
     loader.addCompletionListener(function() { 
         console.log("Loaded");
         setTimeout(function() {
@@ -148,7 +148,7 @@
             contentType: 'html',
         });
     }
-        }, 4000)
+        }, 2000)
     }); 
     loader.start(); 
 </script> 
