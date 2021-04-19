@@ -5,9 +5,12 @@ const registerVideo = (bound, video) => {
 		if(video.duration) {
 			const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
 			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);			
-			video.currentTime = parseFloat(video.duration * rawPercentScrolled).toPrecision(3);
+			let newTime = parseFloat(video.duration * rawPercentScrolled).toPrecision(3);
+            if (video.currentTime != newTime) {
+                video.currentTime = newTime;
+            }
             let aDiv = document.getElementById('a-div')
-            if (rawPercentScrolled > 0.3 && rawPercentScrolled < 0.75) {
+            if (rawPercentScrolled > 0.4 && rawPercentScrolled < 0.9) {
                 if (!aDiv.classList.contains('animated')) {
                     aDiv.classList.add('animated');
                 };
@@ -23,10 +26,10 @@ const registerVideo = (bound, video) => {
             else if (rawPercentScrolled > .99 && video.classList.contains('unstick')) {
                 video.classList.remove('unstick');
             }
-            if (rawPercentScrolled > .99 && !aDiv.classList.contains('d-none')) {
+            if (rawPercentScrolled > 1.05 && !aDiv.classList.contains('d-none')) {
                 aDiv.classList.add('d-none');
             }
-            else if (rawPercentScrolled < .99 && aDiv.classList.contains('d-none')) {
+            else if (rawPercentScrolled < 1.05 && aDiv.classList.contains('d-none')) {
                 aDiv.classList.remove('d-none');
             }
             
