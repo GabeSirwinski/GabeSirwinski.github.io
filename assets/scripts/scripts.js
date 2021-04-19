@@ -10,7 +10,7 @@ const registerVideo = (bound, video) => {
                 video.currentTime = newTime;
             }
             let aDiv = document.getElementById('a-div')
-            if (rawPercentScrolled > 0.4 && rawPercentScrolled < 0.9) {
+            if (rawPercentScrolled > 0.4 && rawPercentScrolled < 0.8) {
                 if (!aDiv.classList.contains('animated')) {
                     aDiv.classList.add('animated');
                 };
