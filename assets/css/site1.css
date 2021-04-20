@@ -748,7 +748,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         top: -9000px;
     }
 
-    video::-webkit-media-controls-panel {
+    *::-webkit-media-controls-panel {
         display: none!important;
         -webkit-appearance: none;
         z-index: -100000000 !important;
@@ -756,7 +756,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         top: -9000px;
       }
       
-      video::-webkit-media-controls-play-button {
+      *::-webkit-media-controls-play-button {
         display: none!important;
         -webkit-appearance: none;
         z-index: -100000000 !important;
@@ -764,7 +764,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         top: -9000px;
       }
       
-      video::-webkit-media-controls-start-playback-button {
+      *::-webkit-media-controls-start-playback-button {
         display: none!important;
         -webkit-appearance: none;
         z-index: -100000000 !important;
