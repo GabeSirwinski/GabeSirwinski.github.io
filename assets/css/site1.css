@@ -746,6 +746,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         z-index: -100000000 !important;
         position: absolute !important;
         top: -9000px;
+        opacity: 0 !important;
     }
 
     *::-webkit-media-controls-panel {
@@ -754,6 +755,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         z-index: -100000000 !important;
         position: absolute !important;
         top: -9000px;
+        opacity: 0 !important;
       }
       
       *::-webkit-media-controls-play-button {
@@ -762,6 +764,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         z-index: -100000000 !important;
         position: absolute !important;
         top: -9000px;
+        opacity: 0 !important;
       }
       
       *::-webkit-media-controls-start-playback-button {
@@ -770,6 +773,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
         z-index: -100000000 !important;
         position: absolute !important;
         top: -9000px;
+        opacity: 0 !important;
       }
 
     
