@@ -293,7 +293,7 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -303,6 +303,9 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
     
     .lead {
         font-size: 1.1em;
+    }
+    .title {
+        font-size: 2.1em;
     }
   }
 
@@ -801,6 +804,10 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
 
       .mt-contact {
           margin-top: 3em;
+      }
+
+      .swiper-pagination-bullet {
+          background: #5b5b5b !important;
       }
 
     
