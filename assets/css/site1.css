@@ -538,10 +538,12 @@ div#a-div.animated, div#b-div.animated, div#c-div.animated {
        opacity: 1; 
     }
     95% {
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, 150%);
         opacity: 0;
     }
     100% {
+        transform: translate(-50%, 150%);
+        opacity: 0;
         display: none;
     }
   }
